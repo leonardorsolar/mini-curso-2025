@@ -44,6 +44,12 @@ Qwen-Max, Qwen-Turbo → da Alibaba
 
 ---
 
+# tokens
+
+https://platform.openai.com/tokenizer
+
+Todos os modelos tem limitações na quantidade de tokens que conseguem aceitar como entrada, o GPT-5 tem limite de 400k tokens enquanto o Claude Opus 4 tem 200k tokens e o Google Gemini 2.5 Pro tem 1M de tokens em sua context window
+
 ## 🔹 Exemplos práticos
 
 Frase:
@@ -99,7 +105,3 @@ Eles definem:
 -   **Quanto vai custar usar o modelo.**
 
 ---
-
-# tokens
-
-https://platform.openai.com/tokenizer
