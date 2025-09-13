@@ -28,6 +28,99 @@ MCP é o protocolo aberto que padroniza como aplicações fornecem contexto para
 
 ---
 
+# MCPS mais usuais para dev:
+
+-
+
+-   https://cursor.directory/
+
+-   https://github.com/punkpeye/awesome-mcp-servers
+
+tutoriais:
+https://cursorideguide.com/guides/github-mcp-setup-guide
+
+## Github mcp server
+
+https://docs.cursor.com/en/tools/mcp
+
+1- Enconte github
+
+# Database
+
+tutorial 1:
+https://executeautomation.github.io/mcp-database-server/
+https://executeautomation.github.io/mcp-database-server/docs/getting-started
+
+## context7
+
+-   https://github.com/upstash/context7
+    MCP remoto
+    Consegue acessar documentação de projeto em tempo real
+    ex.: Veja lá a documentação do react e ajuste para mim este componente.
+
+    Como Instalar no cursor:
+
+    1- https://github.com/upstash/context7 > Install in Cursor
+    2-
+
+## shadcn MCP
+
+O servidor MCP shadcn permite que assistentes de IA interajam com itens de registros. Você pode navegar pelos componentes disponíveis, pesquisar por componentes específicos e instalá-los diretamente no seu projeto usando linguagem natural.
+
+-   https://ui.shadcn.com/docs/mcp
+    Ex.:Por exemplo, você pode pedir a um assistente de IA para "Criar uma landing page usando componentes do registro acme" ou "Encontrar um formulário de login no registro shadcn".
+
+O Model Context Protocol (MCP) é um protocolo aberto que permite que assistentes de IA se conectem com segurança a fontes de dados e ferramentas externas. Com o servidor MCP shadcn, seu assistente de IA obtém acesso direto a:
+
+Navegar por componentes - Listar todos os componentes, blocos e modelos disponíveis de qualquer registro configurado
+Pesquisar em Registros - Encontre componentes específicos por nome ou funcionalidade em várias fontes
+Instalar com linguagem natural - Adicione componentes usando prompts de conversação simples, como "adicionar um formulário de login"
+Suporte para múltiplos registros - Acesse registros públicos, bibliotecas de empresas privadas e fontes de terceiros
+
+### Como funciona
+
+O servidor MCP atua como uma ponte entre seu assistente de IA, registros de componentes e o CLI do shadcn.
+
+Conexão de registro - O MCP se conecta a registros configurados (shadcn/ui, registros privados, fontes de terceiros)
+Linguagem Natural - Você descreve o que precisa em inglês simples
+Processamento de IA - O assistente traduz sua solicitação em comandos de registro
+Entrega de componentes - Os recursos são obtidos e instalados em seu projeto
+
+Bilbioteca:https://ui.shadcn.com/
+
+## Playwright MCP
+
+Api que abrirá seu browser e fará ações
+
+-   https://github.com/microsoft/playwright-mcp
+
+E se você pudesse descrever essas tarefas em inglês simples? "Preencha este formulário de contato com os detalhes da nossa empresa" ou "Acesse a página de problemas do GitHub e verifique se há bugs rotulados como 'críticos'". Agentes de IA agora podem entender essas instruções e traduzi-las em ações no navegador.
+
+Um agente de IA é alimentado por um modelo de linguagem de grande porte (LLM) que pode analisar suas instruções em linguagem natural e descobrir as etapas necessárias para concluir uma tarefa. Mas, para interagir com sites, o agente precisa de ferramentas para controlar o navegador.
+
+Site:https://playwright.dev/agents
+
+### Para que posso usá-lo
+
+O Playwright MCP é uma ferramenta versátil e útil tanto para desenvolvedores quanto para qualquer pessoa que queira automatizar seus fluxos de trabalho baseados na web.
+
+Para Desenvolvimento:
+
+Gerar testes: peça a um agente para criar testes do Playwright para você. "Gere um teste que adicione um item ao carrinho de compras e finalize a compra."
+Explore seu site: use o agente para navegar em seu site, entender sua estrutura e propor possíveis casos de teste.
+Para automação:
+
+Automatize tarefas repetitivas: preencha formulários, baixe relatórios ou execute qualquer outro processo de várias etapas em um site.
+Extração de dados: extraia informações de páginas da web e resuma-as.
+
+## Zen-mcp-server
+
+-   https://github.com/BeehiveInnovations/zen-mcp-server
+
+Orquestração de IA para Claude Code - Um servidor de Protocolo de Contexto de Modelo que oferece à CLI de sua escolha (por exemplo, Claude Code ) acesso a vários modelos de IA para análise de código aprimorada, resolução de problemas e desenvolvimento colaborativo. O Zen funciona com Claude Code, Gemini CLI, Codex CLI e outros.
+
+Ex.: Usando zen mcp, faça um refactor com gemini e o3 para usar as melhores práticas de programação.
+
 ## Arquitetura MCP
 
 **Host (Hospedeiro)**
@@ -57,7 +150,7 @@ Ex.: conteúdos de arquivos, histórico git
 
 Ex.: comandos do slash, opções do menu
 
-# Modos de transporte: stido (processo local) e HTTP/SSE(processo remoto)
+# Modos de transporte: stdio (processo local) e HTTP/SSE(processo remoto)
 
 ### Exemplo
 
